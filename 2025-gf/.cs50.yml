@@ -1,0 +1,4 @@
+submit50:
+  files:
+    - !include "SDLFramework/**/*"  # SDLFramework의 모든 파일 포함
+  style: false
