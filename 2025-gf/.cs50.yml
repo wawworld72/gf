@@ -1,4 +1,7 @@
 submit50:
   files:
-    - !include "SDLFramework/**/*"  # SDLFramework의 모든 파일 포함
+    - !require "SDLFramework/main.cpp"  # SDLFramework 폴더 존재 확인용
+    - !include "SDLFramework/**/*"      # 모든 파일 포함
+  validate:
+    - !exists "SDLFramework/"          # SDLFramework 폴더 존재 검증
   style: false
